@@ -9,7 +9,7 @@ RUN apt-get update && \
 COPY ./entrypoint.sh /usr/local/bin
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
-ARG PROJECT_NAME="rails-google-login"
+ARG PROJECT_NAME="gourmemo"
 ENV APP_ROOT /usr/src/app/$PROJECT_NAME
 
 EXPOSE  3000
